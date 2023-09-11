@@ -1,51 +1,54 @@
 Algoritmo biblioteca
-	Seg鷑 variable_numerica Hacer
-		opcion_1:
-			cargar_libro(salir)
-		opcion_2:
-			borrar_libro(Nombre_Libro)
-		opcion_3:
-			buscar_libro(Nombre_Libro)
-	FinSeg鷑
+	Escribir "Elija opcion del 1 al 3"
+	Leer variable_numerica
+	Seg煤n variable_numerica Hacer
+1:
+ cargar_libro(salir)
+2:
+	borrar_libro(Nombre_Libro)
+3:
+	buscar_libro(Nombre_Libro)
+FinSeg煤n
 FinAlgoritmo
 
-Funci髇 cargar_libro (salir)
-	// dimension biblio[i]
-	// cargaria el array de libros
-	Mientras salir<>'salir' Hacer
-		Escribir 'cargar nombre del Libro '
-		Leer Nombre_Libro
-		Escribir 'cargar autor del Libro '
-		Leer autor_libro
-		Escribir 'cargar Tematica '
-		Leer Tematica
-		Escribir 'cargar Tematica '
-		Leer salir
-	FinMientras
-FinFunci髇
+Funci贸n cargar_libro (salir)
+// dimension biblio[i]
+// cargaria el array de libros
+Mientras salir<>'salir' Hacer
+	Escribir 'cargar nombre del Libro '
+	Leer Nombre_Libro
+	Escribir 'cargar autor del Libro '
+	Leer autor_libro
+	Escribir 'cargar Tematica '
+	Leer Tematica
+	Escribir 'cargar Tematica '
+	Leer salir
+FinMientras
+FinFunci贸n
 
-Funci髇 borrar_libro (Nombre_Libro)
-	i <- 1
-	Dimensionar biblio(i)
-	Mientras Nombre_Libro<>biblio[i] Hacer
-		i <- +1
-	FinMientras
-	Si Nombre_Libro=biblio[i] Entonces
-		Limpiar Pantalla
-	SiNo
-		Escribir 'no existe el libro'
-	FinSi
-FinFunci髇
+Funci贸n borrar_libro (Nombre_Libro)
+i <- 1
+Dimensionar biblio(i)
+Mientras Nombre_Libro<>biblio[i] Hacer
+	i <- +1
+FinMientras
+Si Nombre_Libro=biblio[i] Entonces
+	Limpiar Pantalla
+SiNo
+	Escribir 'no existe el libro'
+FinSi
 
-Funci髇 buscar_libro(Nombre_Libro)
-	i <- 1
-	Dimensionar biblio(i)
-	Mientras Nombre_Libro<>biblio[i] Hacer
-		i <- +1
-	FinMientras
-	Si Nombre_Libro=biblio[i] Entonces
-		Escribir biblio[i]
-	SiNo
-		Escribir 'no existe el libro'
-	FinSi
-FinFunci髇
+FinFunci贸n
+
+Funci贸n buscar_libro(Nombre_Libro)
+i <- 1
+Dimensionar biblio(i)
+Mientras Nombre_Libro<>biblio[i] Hacer
+	i <- +1
+FinMientras
+Si Nombre_Libro=biblio[i] Entonces
+	Escribir biblio[i]
+SiNo
+	Escribir 'no existe el libro'
+FinSi
+FinFunci贸n
